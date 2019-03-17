@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.4.5'
+}
+
+group 'Demo'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
+    compile group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.0.36'
+    compile group: 'net.serenity-bdd', name: 'serenity-reports', version: '2.0.41'
+    compile group: 'net.serenity-bdd', name: 'serenity-core', version: '2.0.41'
+    compile group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '1.9.31'
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.0.41'
+}
+
+intellij {
+    version '2018.3.5'
+}
+patchPluginXml {
+    changeNotes """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}
