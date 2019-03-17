@@ -15,7 +15,6 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     testCompile group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
-    compile group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.0.36'
     compile group: 'net.serenity-bdd', name: 'serenity-reports', version: '2.0.41'
     compile group: 'net.serenity-bdd', name: 'serenity-core', version: '2.0.41'
     compile group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '1.9.31'
